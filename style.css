@@ -9,9 +9,9 @@ body {
     color: aqua;
     padding-left: 30px;
     font-size: 20px;
-    text-decoration: underline wavy;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 100%;
 }
  
 .rotate {
@@ -22,9 +22,10 @@ body {
 }
 
 .textbg {
-    background-color: black;
-    height: 30px;
-    width: 110px;
+    background-color: ;
+    padding-bottom: 5px
+    
+    
 }
 
 p {
@@ -38,11 +39,21 @@ ul {
         color: aqua;
         font-family: nudista-web;
         padding-right: 20px;
-    
+        list-style-position: inside;
+        border-left:  1px aqua;
+        padding-left: 30px;
 
 }
-  
-  
+
+li {
+    margin: 6px;
+}
+
+#mydiv{
+    border: 1px;
+    border-style: dotted;
+    border-color: aqua;
+}
 
 
 
