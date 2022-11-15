@@ -16,14 +16,8 @@
 body {
     background-color: black;
     background-image: url("images/nood.svg");
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     background-size: cover;
-    background-position: center
-
-
-   
-
-
 }
 
   
@@ -49,9 +43,19 @@ a:hover, a:active { text-decoration: none; color:#ff4d06 }
   }
  
   div.rotate {
-    position: relative;
-    margin-top: -250px;
+    position: fixed;
+left: 50%;
+top: 40%;
+transform: translate(-40%, -50%);
+
   }
+
+
+  .textbg {
+    background-color: black;
+    height: 30px;
+    width: 110px;
+     }
   
   
 
