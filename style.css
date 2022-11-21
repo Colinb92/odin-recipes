@@ -2,58 +2,85 @@ body {
     background-color: black;
     background-image: url("images/nood.svg");
     background-repeat: repeat;
-    background-size: cover;
+    background-size: cover;  
 }
 
-.title {
-    color: aqua;
-    padding-left: 30px;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    opacity: 100%;
+h1 {
+    color:aqua;
+    font-size: 11px;
+    font-family: nudista-web;
+    margin: 0;
+    text-transform: uppercase;
 }
- 
+
+ul {
+    color: aqua;
+    font-family: nudista-web;
+    list-style-position: inside;
+}
+
+ol.recipes {
+    color: aqua;
+    font-family: nudista-web;
+    list-style-position: outside;
+    padding-left: 40px;
+    margin:0;
+    line-height: 160%;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+ol.recipes li{
+    border-bottom: rgba(0, 255, 255, 0.4);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+
 .rotate {
     position: fixed;
     left: 50%;
     top: 40%;
     transform: translate(-40%, -50%);
+    filter: brightness(120%);
+    filter: blur(4px);
+    filter: drop-shadow(0px 20px 6px #ff4d06);
+}    
+
+.right {
+    background-image: url("images/nood.svg");
+    background-repeat: repeat;
+    background-size: cover;  
 }
 
-.textbg {
-    background-color: ;
-    padding-bottom: 5px
+.contents{
+    background-color: black;
+    margin-left: 14px;
+    margin-top: 21px;
+    width: fit-content;  
     
-    
 }
 
-p {
-
-    color: aqua;
-    font-family: nudista-web;
-
+.main{
+    padding-left: 30px;
+    padding-top: 35px;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
-ul {
-        color: aqua;
-        font-family: nudista-web;
-        padding-right: 20px;
-        list-style-position: inside;
-        border-left:  1px aqua;
-        padding-left: 30px;
-
+.recipes{
+    padding-right: 40px;
+    padding-bottom: 1080px;
 }
 
-li {
-    margin: 6px;
+a {
+    color: inherit; 
+    text-decoration: inherit; 
 }
 
-#mydiv{
-    border: 1px;
-    border-style: dotted;
-    border-color: aqua;
+#grid{
+    max-width: 450px;
+    margin: 0;
+    display: grid;
+    padding: 0
 }
-
-
-
