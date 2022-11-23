@@ -1,33 +1,50 @@
 body {
-    background-color: black;
-    background-image: url("images/nood.svg");
-    background-repeat: repeat;
-    background-size: cover;  
+    background-color: rgb(1, 11, 13);
+    font-family: nudista-web;
+    overflow: hidden;
+  
 }
 
 h1 {
     color:aqua;
     font-size: 11px;
-    font-family: nudista-web;
     margin: 0;
     text-transform: uppercase;
+    animation: fadeIn 1s;
+
 }
 
-ul {
+ul.ingredients {
     color: aqua;
-    font-family: nudista-web;
-    list-style-position: inside;
+    list-style-position: outside;
+    list-style-type: none;
+    text-transform: none;
+    padding-left: 0px;
+    font-size: 12px;
+    line-height: 200%;
+    padding-right: 10px;
+    padding-top: 40px;
+}
+
+ul.ingredients li {
+    border-bottom: rgba(0, 255, 255, 0.4);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    animation: fadeIn 1s;
+
 }
 
 ol.recipes {
     color: aqua;
-    font-family: nudista-web;
     list-style-position: outside;
-    padding-left: 40px;
+    padding-left: 0px;
     margin:0;
-    line-height: 160%;
+    line-height: 120%;
     font-size: 12px;
     list-style-type: none;
+    padding-right: 10px;
+    padding-top: 40px;
+
 }
 
 ol.recipes li{
@@ -36,22 +53,45 @@ ol.recipes li{
     border-bottom-style: solid;
 }
 
+ol.steps{
+    color: aqua;
+    list-style-position: outside;
+    text-transform: none;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 125%;
+    padding-right: 10px;
+    padding-top: 40px;
+    
+    
+}
+
+ol.steps li{
+    border-bottom: rgba(0, 255, 255, 0.4);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    animation: fadeIn 1s;
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
 
 .rotate {
-    position: fixed;
-    left: 50%;
-    top: 40%;
-    transform: translate(-40%, -50%);
-    filter: brightness(120%);
-    filter: blur(4px);
-    filter: drop-shadow(0px 20px 6px #ff4d06);
+    transform: scale(70%);
+    filter: drop-shadow(0px 0px 0px #ff4d06);
+    text-align: center;
+   
 }    
 
-.right {
-    background-image: url("images/nood.svg");
-    background-repeat: repeat;
-    background-size: cover;  
-}
+
 
 .contents{
     background-color: black;
@@ -63,15 +103,25 @@ ol.recipes li{
 
 .main{
     padding-left: 30px;
-    padding-top: 35px;
+    padding-top: px;
     margin: 0;
     margin-bottom: 5px;
 }
 
-.recipes{
-    padding-right: 40px;
-    padding-bottom: 1080px;
+.left{
+    min-height: 100vh;
+    max-height: 100vh;
+    margin-top: 0px;
+    margin-left: 10px;
+    padding-right: 0px;
+    border-right: rgba(0, 255, 255, 0.4);
+    border-right-width: 1px;
+    border-right-style: solid;
+margin-bottom: 20px;
+
 }
+
+
 
 a {
     color: inherit; 
@@ -79,8 +129,45 @@ a {
 }
 
 #grid{
-    max-width: 450px;
     margin: 0;
     display: grid;
+    grid-template-columns: 6% 17% 77%;
+    padding: 0
+
+}
+
+.gridrecipe{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 6% 17% 17% 60%;
     padding: 0
 }
+
+p{
+    color:aqua;
+    font-size: 12px;
+    font-family: nudista-web;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-right: 0;
+    line-height: 140%;
+}
+
+.block{
+    padding-top: 20px;
+    padding-left: 10px;
+    border-right: rgba(0, 255, 255, 0.4);
+    border-right-width: 1px;
+    border-right-style: solid;
+    min-height: 100vh;
+    animation: fadeIn 2s;
+
+}
+
+.image{
+    animation: fadeIn 1s;
+}
+
+
+
