@@ -10,7 +10,7 @@ h1 {
     font-size: 11px;
     margin: 0;
     text-transform: uppercase;
-    animation: fadeIn 1s;
+    
 
 }
 
@@ -30,7 +30,6 @@ ul.ingredients li {
     border-bottom: rgba(0, 255, 255, 0.4);
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    animation: fadeIn 1s;
 
 }
 
@@ -53,6 +52,8 @@ ol.recipes li{
     border-bottom-style: solid;
 }
 
+
+
 ol.steps{
     color: aqua;
     list-style-position: outside;
@@ -72,8 +73,6 @@ ol.steps li{
     border-bottom-style: solid;
     padding-bottom: 10px;
     padding-top: 10px;
-    animation: fadeIn 1s;
-
 }
 
 @keyframes fadeIn {
@@ -148,10 +147,10 @@ p{
     font-size: 12px;
     font-family: nudista-web;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 55px;
     padding-bottom: 15px;
-    padding-right: 0;
-    line-height: 140%;
+    padding-right: 10px;
+    line-height: 120%;
 }
 
 .block{
@@ -161,13 +160,21 @@ p{
     border-right-width: 1px;
     border-right-style: solid;
     min-height: 100vh;
-    animation: fadeIn 2s;
+    max-height: 100vh;
+    scroll-behavior: smooth;
+    -webkit-filter: grayscale(1);
+
 
 }
 
 .image{
-    animation: fadeIn 1s;
+    -webkit-filter: grayscale(1);
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  
 
 
