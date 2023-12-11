@@ -1,0 +1,1 @@
+The goal of this project is to create a simple website containing a number of recipes. In doing so I will put into practice the html skills I have learned in TOP so far. These include setting up a boiler plate html file, working with headers and paragraphs, linking images, working with github repositories, 
