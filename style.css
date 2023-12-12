@@ -1,0 +1,19 @@
+.sub,
+.head,
+.link {
+    font-family: Helvetica, Arial, sans-serif;
+    color: chartreuse;
+}
+
+.list {
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+body {
+    background-color: rgb(124, 124, 124);
+}
+a:visited { text-decoration: none; color:chartreuse; }
+a:hover { text-decoration: none; color:rgb(108, 108, 108); }
+a:focus { text-decoration: none; color:rgb(108, 108, 108); }
+a:hover, a:active { text-decoration: none; color:rgb(108, 108, 108)}
